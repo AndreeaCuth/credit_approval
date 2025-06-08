@@ -78,21 +78,23 @@ docker run -p 8000:8000 credit_approval_app
 
 ```json
 {
-    Gender: int              
-    Age: float
-    Debt: float
-    Married: int           
-    BankCustomer: int       
-    Industry: str            
-    Ethnicity: str           
-    YearsEmployed: float
-    PriorDefault: int       
-    Employed: int           
-    CreditScore: int
-    DriversLicense: int      
-    Citizen: str             
-    ZipCode: int
-    Income: float
+  
+  "Gender": 1,
+  "Age": 35.5,
+  "Debt": 0,
+  "Married": 1,
+  "BankCustomer": 1,
+  "Industry": "Retail",
+  "Ethnicity": "Latino",
+  "YearsEmployed": 2.0,
+  "PriorDefault": 0,
+  "Employed": 1,
+  "CreditScore": 10,
+  "DriversLicense": 1,
+  "Citizen": "ByBirth",
+  "ZipCode": 12345,
+  "Income": 45000.0
+
 }
 ```
 
@@ -100,8 +102,8 @@ docker run -p 8000:8000 credit_approval_app
 
 ```json
 {
-  "prediction": string Approved/Rejected,
-  "probability": float <score>,
+  "prediction": "Approved",
+  "probability": 0.87
 }
 ```
 
